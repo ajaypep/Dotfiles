@@ -1,0 +1,11 @@
+format="$username$directory$git_branch$git_status$git_commit$git_state$git_metrics$character"
+
+add_newline=true
+[directory]
+truncation_length=1
+[battery]
+disabled=true
+[username]
+style_user="bold #87CEEB"
+show_always=true
+disabled=true
