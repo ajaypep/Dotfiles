@@ -1,0 +1,18 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Dracula",
+    "window.titleBarStyle": "custom",
+    "editor.fontFamily": "'Cascadia Code PL', 'monospace'",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": "'calt', 'ss01'",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": ["comment","storage"],
+                "settings": {
+                    "fontStyle": "italic bold"
+                }
+            }
+        ]
+    },
+}
