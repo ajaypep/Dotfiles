@@ -10,10 +10,16 @@
             {
                 "scope": [
                     "comment",
-                    "storage"
+                    "storage",
                 ],
                 "settings": {
                     "fontStyle": "italic bold"
+                }
+            },
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "fontStyle": ""
                 }
             }
         ]
