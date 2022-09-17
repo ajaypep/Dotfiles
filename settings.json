@@ -8,11 +8,16 @@
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": ["comment","storage"],
+                "scope": [
+                    "comment",
+                    "storage"
+                ],
                 "settings": {
                     "fontStyle": "italic bold"
                 }
             }
         ]
     },
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
 }
