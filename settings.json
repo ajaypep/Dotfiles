@@ -8,12 +8,15 @@
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": [
-                    "comment",
-                    "storage",
-                ],
+                "scope": "comment",
                 "settings": {
                     "fontStyle": "italic bold"
+                }
+            },
+            {
+                "scope": "storage.type",
+                "settings": {
+                    "fontStyle": "italic"
                 }
             },
             {
