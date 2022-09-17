@@ -1,0 +1,10 @@
+[core]
+	editor = nvim
+[user]
+	name = Ajay K
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = master
+[push]
+	autoSetupRemote = true
