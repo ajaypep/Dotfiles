@@ -1,4 +1,4 @@
-format="$username$directory$git_branch$git_status$git_commit$git_state$git_metrics$character"
+format="$username$directory$git_branch$git_commit$git_state$git_metrics$git_status$character"
 
 add_newline=true
 [directory]
