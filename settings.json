@@ -45,6 +45,9 @@
         },
         "configurePreset": {
             "visibility": "icon"
+        },
+        "status": {
+            "visibility": "hidden"
         }
     }
 }
