@@ -31,11 +31,14 @@
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
     "cmake.statusbar.advanced": {
+        "status": {
+            "visibility": "compact"
+        },
         "ctest": {
             "visibility": "hidden"
         },
         "build": {
-            "visibility": "hidden"
+            "visibility": "icon"
         },
         "buildTarget": {
             "visibility": "hidden"
@@ -44,10 +47,14 @@
             "visibility": "hidden"
         },
         "configurePreset": {
-            "visibility": "icon"
-        },
-        "status": {
             "visibility": "compact"
+        },
+        "buildPreset": {
+            "visibility": "hidden"
+        },
+        "testPreset": {
+            "visibility": "hidden"
         }
-    }
+    },
+    "terminal.integrated.cursorStyle": "line"
 }
