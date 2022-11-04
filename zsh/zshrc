@@ -10,6 +10,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+PATH=$PATH:/usr/sbin
+alias c="clear"
+alias ls="exa --icons"
+alias tree="exa --icons --tree"
+alias up="sudo zypper refresh && sudo zypper dup"
+
+
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
