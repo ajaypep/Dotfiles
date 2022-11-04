@@ -5,4 +5,7 @@ require("packer").startup(function()
     use 'sbdchd/neoformat'
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
+    use 'romgrk/barbar.nvim'
+    use 'nvim-tree/nvim-tree.lua'
+
 end)

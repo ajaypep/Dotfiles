@@ -1,5 +1,6 @@
 vim.o.number = true
-vim.o.mouse=a
+vim.o.relativenumber=true
+mouse=nvi
 vim.o.tabstop=4
 vim.o.shiftwidth=4
 vim.o.expandtab = true
