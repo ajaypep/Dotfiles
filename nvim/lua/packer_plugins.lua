@@ -2,7 +2,6 @@ require("packer").startup(function()
 	use("wbthomason/packer.nvim")
 	use("dracula/vim")
 	use("dense-analysis/ale")
-	use("sbdchd/neoformat")
 	use("nvim-lualine/lualine.nvim")
 	use("kyazdani42/nvim-web-devicons")
 	use("romgrk/barbar.nvim")
@@ -15,4 +14,11 @@ require("packer").startup(function()
 	use("hrsh7th/nvim-cmp")
 	use("nvim-lua/plenary.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
+	use({
+		"VonHeikemen/fine-cmdline.nvim",
+		requires = {
+			{ "MunifTanjim/nui.nvim" },
+		},
+	})
 end)
