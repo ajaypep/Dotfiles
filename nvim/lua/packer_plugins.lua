@@ -1,6 +1,6 @@
 require("packer").startup(function()
 	use("wbthomason/packer.nvim")
-	use("dracula/vim")
+	use("Mofiqul/dracula.nvim")
 	use("dense-analysis/ale")
 	use("nvim-lualine/lualine.nvim")
 	use("kyazdani42/nvim-web-devicons")
@@ -22,4 +22,5 @@ require("packer").startup(function()
 		},
 	})
 	use("lewis6991/impatient.nvim")
+	use("nvim-treesitter/nvim-treesitter")
 end)
