@@ -1,4 +1,4 @@
-require("nvim-treesitter").setup({
+require("nvim-treesitter.configs").setup({
 	-- A list of parser names, or "all"
 	ensure_installed = { "c", "cpp", "lua", "json" },
 
@@ -23,8 +23,12 @@ require("nvim-treesitter").setup({
 		-- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
 		-- the name of the parser)
 		-- list of language that will be disabled
-		disable = {},
+		disable = {""},
 		-- Or use a function for more flexibility, e.g. to disable slow treesitter highlight for large files
-		additional_vim_regex_highlighting = false,
+		additional_vim_regex_highlighting = true,
 	},
+    indent = {
+        enable = false,
+        disable = {""},
+    },
 })

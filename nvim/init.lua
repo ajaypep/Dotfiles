@@ -1,5 +1,4 @@
 require("impatient")
-
 vim.o.number = true
 vim.o.relativenumber = true
 MOUSE = "nvi"
