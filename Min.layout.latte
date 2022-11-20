@@ -58,17 +58,17 @@ immutability=1
 plugin=org.kde.plasma.kicker
 
 [Containments][1][Applets][19][Configuration]
-PreloadWeight=92
+PreloadWeight=89
 
 [Containments][1][Applets][19][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][1][Applets][19][Configuration][General]
-customButtonImage=distributor-logo-ubuntu
+customButtonImage=/usr/share/pixmaps/distribution-logos/square-hicolor.svg
 favoriteSystemActions=suspend,logout,reboot,shutdown
 favoritesPortedToKAstats=true
-hiddenApplications=assistant.desktop,designer.desktop,linguist.desktop,qdbusviewer.desktop,org.kde.kuserfeedback-console.desktop,qv4l2.desktop,qvidcap.desktop,avahi-discover.desktop,lstopo.desktop,org.kde.kmenuedit.desktop,org.kde.plasma.emojier.desktop,nvim.desktop,fish.desktop,htop.desktop,bssh.desktop,bvnc.desktop,org.kde.dolphinsu.desktop,konsolesu.desktop,org.kde.ark.desktop,org.kde.kwalletmanager5.desktop,org.kde.latte-dock.desktop
+hiddenApplications=assistant.desktop,designer.desktop,linguist.desktop,qdbusviewer.desktop,org.kde.kuserfeedback-console.desktop,qv4l2.desktop,qvidcap.desktop,avahi-discover.desktop,lstopo.desktop,org.kde.kmenuedit.desktop,org.kde.plasma.emojier.desktop,nvim.desktop,fish.desktop,htop.desktop,bssh.desktop,bvnc.desktop,org.kde.dolphinsu.desktop,konsolesu.desktop,org.kde.ark.desktop,org.kde.kwalletmanager5.desktop,org.kde.latte-dock.desktop,jconsole.desktop
 showRecentApps=false
 showRecentDocs=false
 useCustomButtonImage=true
@@ -83,7 +83,7 @@ PreloadWeight=0
 [Containments][1][Applets][2][Configuration][General]
 hoverAction=PreviewWindows
 isInLatteDock=true
-launchers59=applications:org.kde.dolphin.desktop,applications:kitty.desktop,applications:brave-browser.desktop,applications:jetbrains-clion.desktop,applications:code.desktop,applications:google-chrome.desktop,applications:systemsettings.desktop
+launchers59=applications:org.kde.dolphin.desktop,applications:kitty.desktop,applications:firefox.desktop,applications:jetbrains-clion.desktop,applications:code.desktop,applications:jetbrains-idea.desktop,applications:google-chrome.desktop,applications:systemsettings.desktop
 leftClickAction=CycleThroughTasks
 showAudioBadge=false
 
@@ -92,7 +92,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][1][Applets][5][Configuration]
-PreloadWeight=57
+PreloadWeight=26
 SystrayContainmentId=6
 
 [Containments][1][ConfigDialog]
@@ -126,6 +126,7 @@ shadows=All
 shadowsUpgraded=true
 showGlow=false
 tasksUpgraded=true
+themeColors=SmartThemeColors
 titleTooltips=false
 zoomLevel=0
 
@@ -142,6 +143,8 @@ immutability=1
 lastScreen=-1
 location=4
 plugin=org.kde.plasma.private.systemtray
+popupHeight=432
+popupWidth=432
 wallpaperplugin=org.kde.image
 
 [Containments][6][Applets][13]
@@ -167,9 +170,16 @@ PreloadWeight=0
 
 [Containments][6][Applets][20]
 immutability=1
-plugin=org.kde.kdeconnect
+plugin=org.kde.plasma.printmanager
 
 [Containments][6][Applets][20][Configuration]
+PreloadWeight=0
+
+[Containments][6][Applets][22]
+immutability=1
+plugin=org.kde.plasma.nightcolorcontrol
+
+[Containments][6][Applets][22][Configuration]
 PreloadWeight=0
 
 [Containments][6][Applets][7]
@@ -198,9 +208,9 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][6][General]
-extraItems=org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kdeconnect,org.kde.kupapplet
-hiddenItems=org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.kdeconnect,discord1
-knownItems=org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.kupapplet
+extraItems=org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.nightcolorcontrol
+hiddenItems=org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.kdeconnect,discord1,discord
+knownItems=org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.pkupdates
 
 [LayoutSettings]
 activities=
@@ -210,7 +220,7 @@ customBackground=
 customTextColor=
 disableBordersForMaximizedWindows=false
 icon=
-lastUsedActivity=0261a86a-d39b-45ba-b7c7-735b8f2c007a
+lastUsedActivity=c2afe8a1-31f3-42d8-a1dc-1bfa8bcf82f3
 launchers=
 popUpMargin=-1
 preferredForShortcutsTouched=false
