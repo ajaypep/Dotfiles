@@ -34,6 +34,10 @@ local plugins = {
     { 'akinsho/toggleterm.nvim',         version = "*",    config = true },
     "glepnir/lspsaga.nvim",
     "p00f/clangd_extensions.nvim",
+    {
+        "williamboman/mason.nvim",
+        build = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    },
 }
 
 require("lazy").setup(plugins)
