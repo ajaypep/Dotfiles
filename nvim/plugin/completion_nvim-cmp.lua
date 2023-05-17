@@ -63,7 +63,7 @@ cmp.setup.cmdline(':', {
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 
-local servers = { "clangd", "sumneko_lua" }
+local servers = { "clangd", "lua_ls" }
 
 for _, server in ipairs(servers) do
     require("lspconfig")[server].setup({

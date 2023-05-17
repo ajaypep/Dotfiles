@@ -1,9 +1,9 @@
-local servers = { "clangd", "sumneko_lua" }
+local servers = { "clangd", "lua_ls" }
 for _, server in ipairs(servers) do
     require("lspconfig")[server].setup({})
 end
 
-require("lspconfig").sumneko_lua.setup {
+require("lspconfig").lua_ls.setup {
     -- ... other configs
     settings = {
         Lua = {
