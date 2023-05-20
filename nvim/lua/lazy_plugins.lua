@@ -20,23 +20,19 @@ local plugins = {
     "dracula/vim",
     { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
     "neovim/nvim-lspconfig",
-    "hrsh7th/cmp-nvim-lsp",
-    "hrsh7th/cmp-buffer",
-    "hrsh7th/cmp-path",
-    "hrsh7th/cmp-cmdline",
-    "hrsh7th/nvim-cmp",
-    "numToStr/Comment.nvim",
     "kyazdani42/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
     "romgrk/barbar.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-tree.lua",
-    { 'akinsho/toggleterm.nvim',         version = "*",    config = true },
-    "glepnir/lspsaga.nvim",
-    "p00f/clangd_extensions.nvim",
     {
         "williamboman/mason.nvim",
         build = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.1',
+        dependencies = { 'nvim-lua/plenary.nvim' }
     },
 }
 
