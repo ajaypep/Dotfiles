@@ -1,10 +1,16 @@
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = false
+
+local lspconfig = require('lspconfig')
+
 local servers = { "clangd", "lua_ls" }
 for _, server in ipairs(servers) do
-    require("lspconfig")[server].setup({})
+    lspconfig[server].setup({
+        capabilities = capabilities,
+    })
 end
 
-require("lspconfig").lua_ls.setup {
-    -- ... other configs
+lspconfig.lua_ls.setup {
     settings = {
         Lua = {
             diagnostics = {

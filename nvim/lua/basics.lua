@@ -9,3 +9,4 @@ vim.o.expandtab = true
 vim.o.laststatus = 2
 vim.o.termguicolors = true
 vim.g.mapleader = " "
+vim.o.pumheight = 7
