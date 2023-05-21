@@ -1,11 +1,19 @@
 format="$username$directory$git_branch$git_commit$git_state$git_metrics$git_status$character"
 
 add_newline=true
+
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+
+
 [directory]
 truncation_length=1
+home_symbol=' '
+
 [battery]
 disabled=true
 [username]
 style_user="bold #87CEEB"
-show_always=true
-disabled=true
+disabled=false
+show_always=false
