@@ -9,7 +9,7 @@ error_symbol = '[](bold red)'
 
 [directory]
 truncation_length=1
-home_symbol=' '
+home_symbol=''
 
 [battery]
 disabled=true
