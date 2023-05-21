@@ -16,7 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 --list plugins
 
 local plugins = {
-    "wbthomason/packer.nvim",
     "dracula/vim",
     { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
     "neovim/nvim-lspconfig",
