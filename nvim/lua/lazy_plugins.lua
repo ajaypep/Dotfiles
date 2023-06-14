@@ -12,12 +12,11 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-
 --list plugins
 
 local plugins = {
     "dracula/vim",
-    { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
+    { "nvim-treesitter/nvim-treesitter",    run = ":TSUpdate" },
     "neovim/nvim-lspconfig",
     "kyazdani42/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
@@ -39,6 +38,9 @@ local plugins = {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
     'onsails/lspkind.nvim',
+    { "lukas-reineke/indent-blankline.nvim" },
+    { "L3MON4D3/LuaSnip" },
+    { "saadparwaiz1/cmp_luasnip" },
 }
 
 require("lazy").setup(plugins)
