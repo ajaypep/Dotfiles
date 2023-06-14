@@ -16,11 +16,12 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     "dracula/vim",
-    { "nvim-treesitter/nvim-treesitter",    run = ":TSUpdate" },
+    { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
     "neovim/nvim-lspconfig",
-    "kyazdani42/nvim-web-devicons",
+    "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
-    "romgrk/barbar.nvim",
+    { 'akinsho/bufferline.nvim',         version = "*" },
+    --    "romgrk/barbar.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-tree.lua",
     {
