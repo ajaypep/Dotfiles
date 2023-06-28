@@ -15,12 +15,13 @@ vim.opt.rtp:prepend(lazypath)
 --list plugins
 
 local plugins = {
-    "dracula/vim",
+    'maxmx03/dracula.nvim',
+    { "catppuccin/nvim",                 name = "catppuccin", priority = 1000 },
     { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
     "neovim/nvim-lspconfig",
     "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
-    { 'akinsho/bufferline.nvim',         version = "*" },
+    { 'akinsho/bufferline.nvim',            version = "*" },
     --    "romgrk/barbar.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-tree.lua",
@@ -42,6 +43,8 @@ local plugins = {
     { "lukas-reineke/indent-blankline.nvim" },
     { "L3MON4D3/LuaSnip" },
     { "saadparwaiz1/cmp_luasnip" },
+    { 'akinsho/toggleterm.nvim',            version = "*", config = true },
+    { 'numToStr/Comment.nvim' },
 }
 
 require("lazy").setup(plugins)
