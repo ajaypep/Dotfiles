@@ -1,0 +1,25 @@
+.xfce4-panel {
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+#xfce4-notification-plugin image {
+    -gtk-icon-transform: scale(0.60);
+}
+
+#pulseaudio-button > image {
+-gtk-icon-transform: scale(0.60);
+}
+
+#xfce4-power-manager-plugin > box > image {
+    -gtk-icon-transform: scale(0.60); 
+}
+
+#xfce4-clock-plugin > image {
+    -gtk-icon-transform: scale(0.1); 
+}
+
+.xfce4-panel clock image {
+    -gtk-icon-transform: scale(0.1); 
+}
+
