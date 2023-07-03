@@ -1,4 +1,4 @@
-.xfce4-panel {
+.xfce4-panel.horizontal {
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 }
@@ -7,7 +7,7 @@
     -gtk-icon-transform: scale(0.60);
 }
 
-#pulseaudio-button > image {
+#pulseaudio-button > box > image {
 -gtk-icon-transform: scale(0.60);
 }
 
