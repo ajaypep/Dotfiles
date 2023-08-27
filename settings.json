@@ -1,9 +1,9 @@
 {
     "workbench.startupEditor": "none",
     "window.titleBarStyle": "custom",
-    "editor.fontFamily": "'Cascadia Code PL', 'Hasklug Nerd Font'",
+    "editor.fontFamily": "'Iosevka Extended', 'Hasklug Nerd Font'",
     "editor.fontSize": 15,
-    "editor.fontLigatures": "'calt', 'ss01'",
+    "editor.fontLigatures": true,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
