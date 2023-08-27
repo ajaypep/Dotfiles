@@ -22,7 +22,6 @@ local plugins = {
     "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
     { 'akinsho/bufferline.nvim',            version = "*" },
-    --    "romgrk/barbar.nvim",
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-tree.lua",
     {
@@ -45,6 +44,7 @@ local plugins = {
     { "saadparwaiz1/cmp_luasnip" },
     { 'akinsho/toggleterm.nvim',            version = "*", config = true },
     { 'numToStr/Comment.nvim' },
+    'lewis6991/gitsigns.nvim',
 }
 
 require("lazy").setup(plugins)

@@ -2,8 +2,8 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = false
 
 local lspconfig = require('lspconfig')
+local servers = { "clangd", "lua_ls", "eslint" }
 
-local servers = { "clangd", "lua_ls" }
 for _, server in ipairs(servers) do
     lspconfig[server].setup({
         capabilities = capabilities,
@@ -21,12 +21,28 @@ lspconfig.lua_ls.setup {
     }
 }
 
+lspconfig.eslint.setup {
+    capabilities = capabilities,
+    on_attach = function(client, bufnr)
+        client.server_capabilities.documentFormattingProvider = true
+        if client.server_capabilities.documentFormattingProvider then
+            local au_lsp = vim.api.nvim_create_augroup("eslint-lsp", { clear = true })
+            vim.api.nvim_create_autocmd("BufWritePre", {
+                pattern = "*",
+                callback = function()
+                    vim.lsp.buf.format({ async = true })
+                end,
+                group = au_lsp,
+            })
+        end
+    end,
+}
+
 vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function()
         vim.lsp.buf.format()
     end,
 })
-
 
 local configs = require 'lspconfig/configs'
 local util = require 'lspconfig/util'
