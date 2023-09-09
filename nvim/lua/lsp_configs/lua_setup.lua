@@ -1,4 +1,8 @@
-local setup = {
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+local lua_setup = {
+    capabilities = capabilities,
     settings = {
         Lua = {
             diagnostics = {
@@ -9,4 +13,4 @@ local setup = {
     }
 }
 
-return setup
+return lua_setup

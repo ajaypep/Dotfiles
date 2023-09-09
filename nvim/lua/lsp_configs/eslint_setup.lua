@@ -1,4 +1,8 @@
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 local eslint_setup = {
+    capabilities = capabilities,
     on_attach = function(client, bufnr)
         client.server_capabilities.documentFormattingProvider = true
         if client.server_capabilities.documentFormattingProvider then
