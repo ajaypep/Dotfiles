@@ -16,18 +16,15 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     'maxmx03/dracula.nvim',
-    { "catppuccin/nvim",                 name = "catppuccin", priority = 1000 },
     { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
     "neovim/nvim-lspconfig",
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
     "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
     { 'akinsho/bufferline.nvim',            version = "*" },
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-tree.lua",
-    {
-        "williamboman/mason.nvim",
-        build = ":MasonUpdate" -- :MasonUpdate updates registry contents
-    },
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.1',
@@ -42,7 +39,6 @@ local plugins = {
     { "lukas-reineke/indent-blankline.nvim" },
     { "L3MON4D3/LuaSnip" },
     { "saadparwaiz1/cmp_luasnip" },
-    { 'akinsho/toggleterm.nvim',            version = "*", config = true },
     { 'numToStr/Comment.nvim' },
     'lewis6991/gitsigns.nvim',
 }
