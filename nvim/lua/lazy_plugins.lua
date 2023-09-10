@@ -20,9 +20,10 @@ local plugins = {
     "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
+    'mhartington/formatter.nvim',
     "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
-    { 'akinsho/bufferline.nvim',            version = "*" },
+    { 'akinsho/bufferline.nvim',         version = "*" },
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-tree.lua",
     {
