@@ -10,7 +10,7 @@ local html_setup = {
 			css = true,
 			javascript = true,
 		},
-		provideFormatter = true,
+		provideFormatter = false,
 	},
 	settings = {
 		css = {},
@@ -19,5 +19,4 @@ local html_setup = {
 	},
 	single_file_support = true,
 }
-
 return html_setup
