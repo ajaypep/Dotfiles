@@ -1,3 +1,3 @@
-function ls --wraps='exa --icons' --description 'alias ls exa --icons'
-  exa --icons $argv; 
+function ls --wraps='lsd' --description 'alias ls lsd'
+  lsd $argv; 
 end
