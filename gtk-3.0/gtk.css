@@ -23,3 +23,8 @@
     -gtk-icon-transform: scale(0.1); 
 }
 
+.tooltip,
+tooltip {
+    background-color: #282a36;
+    opacity: 1;
+}
