@@ -56,5 +56,6 @@
             "visibility": "hidden"
         }
     },
-    "terminal.integrated.cursorStyle": "line"
+    "terminal.integrated.cursorStyle": "line",
+    "explorer.compactFolders": false
 }
