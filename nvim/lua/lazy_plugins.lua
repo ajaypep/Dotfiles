@@ -49,6 +49,7 @@ local plugins = {
 	{ "saadparwaiz1/cmp_luasnip" },
 	{ "numToStr/Comment.nvim" },
 	"lewis6991/gitsigns.nvim",
+    {'kaarmu/typst.vim', ft = 'typst', lazy=false,}
 }
 
 require("lazy").setup(plugins)
