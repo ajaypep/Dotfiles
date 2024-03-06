@@ -1,7 +1,7 @@
 {
     "workbench.startupEditor": "none",
     "window.titleBarStyle": "custom",
-    "editor.fontFamily": "'Iosevka Extended', 'Hasklug Nerd Font'",
+    "editor.fontFamily": "'Iosevka Extended', 'Symbols Nerd Font'",
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.tokenColorCustomizations": {
