@@ -1,0 +1,17 @@
+import = ["/home/ajay/.config/alacritty/themes/dracula.toml"]
+
+[cursor.style]
+shape = "Beam"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Iosevka Extended"
+
+[window]
+dynamic_title = false
+dynamic_padding = true
+
+[scrolling]
+history=1000
