@@ -1,5 +1,5 @@
 
-add_newline=true
+add_newline=false
 
 [line_break]
 disabled = true
@@ -29,3 +29,9 @@ format='via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 [cmake]
 disabled=true
+
+[git_status]
+behind="\u2193 "
+ahead="\u2191 "
+diverged="\u2195 "
+deleted="\u274c "
