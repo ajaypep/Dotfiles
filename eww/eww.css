@@ -1,0 +1,14 @@
+.occupied{
+    background-color: blue;
+    color: white;
+}
+
+.empty{
+    background-color: black;
+    color: white;
+}
+
+.current{
+    background-color: white;
+    color: black;
+}

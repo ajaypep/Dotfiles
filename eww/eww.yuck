@@ -1,0 +1,43 @@
+(defvar max_title_length 20)
+(deflisten window_title :initial "..." "sh ~/.config/eww/scripts/get-window-title")
+
+(defwidget window-title-w []
+  (box
+    (label :text "${window_title == 'null' ? '' : strlength(window_title) > max_title_length ? substring(window_title,0,max_title_length - 1)+'...' : window_title}"
+    )
+  ))
+
+(deflisten workspaces :initial "[]" "sh ~/.config/eww/scripts/get-workspaces")
+
+(deflisten current_workspace :initial "1" "sh ~/.config/eww/scripts/get-active-workspace")
+
+(defwidget workspaces-w []
+  (eventbox :onscroll "sh ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}" :class "workspaces-widget"
+    (box :space-evenly true
+      (label :text "${workspaces}${current_workspace}" :visible false)
+      (for workspace in workspaces
+        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+          (box :class "workspace-entry ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+            (label :text "${workspace.id}")
+            )
+          )
+        )
+      )
+    )
+  )
+
+(defwidget bar-content []
+    (box
+        (workspaces-w)
+        (window-title-w)))
+
+(defwindow statusbar
+            :monitor 0
+           :geometry (geometry :x "0%"
+                               :y "10px"
+                               :width "90%"
+                               :height "30px"
+                               :anchor "bottom center")
+           :stacking "bg"
+           :exclusive true
+           (bar-content))
