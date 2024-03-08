@@ -25,13 +25,24 @@
       )
     )
   )
+(defvar time-visible false)   ; for :run-while property of below variable
+                              ; when this turns true, the polling starts and
+                              ; var gets updated with given interval
+
+(defpoll time :interval "1m"
+              :initial "initial-value"  ; optional, defaults to poll at startup
+              :run-while time-visible   ; optional, defaults to 'true'
+  `date +%l:%M`)
+
 
 (defwidget bar-content []
     (box
-        (workspaces-w)
-        (window-title-w)))
+        (workspaces-w :class "workspace-w")
+        (window-title-w)
+        time))
 
 (defwindow statusbar
+            :class "statusbar"
             :monitor 0
            :geometry (geometry :x "0%"
                                :y "10px"

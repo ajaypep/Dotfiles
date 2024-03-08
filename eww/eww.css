@@ -1,14 +1,23 @@
 .occupied{
-    background-color: blue;
-    color: white;
+    color: #6272A4;
 }
 
 .empty{
-    background-color: black;
-    color: white;
+    color: #44475A;
 }
 
 .current{
-    background-color: white;
-    color: black;
+    color: #F8F8F2;
+}
+
+.statusbar{
+    font-family: 'Inter','Roboto', san-serif;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #282A36;
+}
+.workspace-w{
+    border-radius: 5px;
+}
+.empty-space{
 }
