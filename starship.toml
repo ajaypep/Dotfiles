@@ -34,4 +34,4 @@ disabled=true
 behind="\u2193 "
 ahead="\u2191 "
 diverged="\u2195 "
-deleted="\u274c "
+deleted="\u274c"

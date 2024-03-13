@@ -133,7 +133,12 @@ function M.config()
 		-- But for many setups, the LSP (`tsserver`) will work just fine
 		-- tsserver = {},
 		--
-		typst_lsp = {},
+		typst_lsp = {
+			settings = {
+				exportPdf = "onType", -- Choose onType, onSave or never.
+				-- serverPath = "" -- Normally, there is no need to uncomment it.
+			},
+		},
 		lua_ls = {
 			-- cmd = {...},
 			-- filetypes { ...},
