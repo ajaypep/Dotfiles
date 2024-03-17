@@ -1,10 +1,7 @@
-import = ["/home/ajay/.config/alacritty/themes/dracula.toml"]
+import = ["~/.config/alacritty/themes/dracula.toml"]
 
 [shell]
 program = "/usr/bin/fish"
-
-[cursor.style]
-shape = "Beam"
 
 [font]
 size = 12.0
