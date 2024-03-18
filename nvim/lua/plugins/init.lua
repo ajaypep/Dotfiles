@@ -108,6 +108,7 @@ require("lazy").setup({
 		"kaarmu/typst.vim",
 		ft = "typst",
 		lazy = false,
+		config = require(etc("typst_vim")).config,
 	},
 
 	{ -- Autoformat
