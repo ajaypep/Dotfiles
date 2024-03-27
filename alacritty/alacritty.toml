@@ -7,7 +7,7 @@ program = "/usr/bin/fish"
 size = 12.0
 
 [font.normal]
-family = "Iosevka Extended"
+family = "Iosevka Term"
 
 [window]
 dynamic_title = false
