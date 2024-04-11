@@ -1,4 +1,3 @@
-
 add_newline=false
 
 [line_break]
@@ -10,7 +9,7 @@ error_symbol = '[](bold red)'
 
 [directory]
 truncation_length=1
-home_symbol=''
+home_symbol=""
 
 [battery]
 disabled=true
@@ -23,15 +22,16 @@ style_user="bold #87CEEB"
 show_always=false
 
 [python]
-symbol="\ue235 "
+symbol=" "
 pyenv_version_name = true
+style="yellow"
 format='via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 [cmake]
 disabled=true
 
 [git_status]
-behind="\u2193 "
-ahead="\u2191 "
-diverged="\u2195 "
-deleted="\u274c"
+behind="↓"
+ahead="↑"
+diverged="⇕"
+deleted="󰅖"
