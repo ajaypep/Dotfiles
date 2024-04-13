@@ -73,7 +73,7 @@ gaps inner 6px
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym --release $mod+Shift+p exec --no-startup-id /home/ajay/.cargo/bin/xcolor | xclip -selection clipboard
+bindsym --release $mod+Shift+p exec --no-startup-id /home/ajay/.cargo/bin/xcolor | cb
 
 # kill focused window
 bindsym $mod+Shift+q kill
