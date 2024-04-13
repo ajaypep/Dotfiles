@@ -26,6 +26,7 @@ exec --no-startup-id dunst
 exec --no-startup-id ~/.fehbg &
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id redshift -l 20.5937:78.9629
+exec --no-startup-id parcellite
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -33,6 +34,8 @@ exec --no-startup-id redshift -l 20.5937:78.9629
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l blur
 bindsym $mod+shift+x exec --no-startup-id betterlockscreen -l blur
+bindsym $mod+b exec --no-startup-id ~/.scripts/screenshot.sh
+bindsym $mod+c exec --no-startup-id ~/.scripts/screenshot-clipboard-only.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -53,6 +56,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 client.focused #282A36 #282A36 #F8F8F2 #000000 #ffffff
+client.focused_inactive #282A36 #282A36 #F8F8F2 #000000 #ffffff
 client.unfocused #171b25 #171b25 #777777 #000000 #ffffff
 
 title_align center
@@ -125,6 +129,7 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+bindsym $mod+z focus child
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -200,6 +205,5 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
 exec --no-startup-id polybar
 exec --no-startup-id picom -b
