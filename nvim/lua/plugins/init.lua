@@ -39,22 +39,6 @@ require("lazy").setup({
 	-- This is often very useful to both group configuration, as well as handle
 	-- lazy loading plugins that don't need to be loaded immediately at startup.
 	--
-	-- For example, in the following configuration, we use:
-	--  event = 'VimEnter'
-	--
-	-- which loads which-key before all the UI elements are loaded. Events can be
-	-- normal autocommands events (`:help autocmd-events`).
-	--
-	-- Then, because we use the `config` key, the configuration only runs
-	-- after the plugin has been loaded:
-	--  config = function() ... end
-
-	{ -- Useful plugin to show you pending keybinds.
-		"folke/which-key.nvim",
-		event = "VimEnter", -- Sets the loading event to 'VimEnter'
-		config = require(etc("which-key-nvim")).config,
-	},
-
 	-- NOTE: Plugins can specify dependencies.
 	--
 	-- The dependencies are proper plugin specifications as well - anything
@@ -150,20 +134,11 @@ require("lazy").setup({
 	},
 	{
 		"dracula/vim",
-
 		name = "dracula",
 		priority = 1000, -- make sure to load this before all the other start plugins
 		init = function()
 			vim.cmd.colorscheme("dracula")
 		end,
-	},
-
-	-- Highlight todo, notes, etc in comments
-	{
-		"folke/todo-comments.nvim",
-		event = "VimEnter",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		opts = { signs = true },
 	},
 	{
 		"nvim-lualine/lualine.nvim",
