@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Inter 10
+font pango:Inter Bold 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -61,9 +61,7 @@ client.unfocused #171b25 #171b25 #777777 #000000 #ffffff
 
 title_align center
 
-for_window [all] title_format "<b>%title</b>"
-for_window [all] title_window_icon on
-for_window [all] title_window_icon padding 10px
+for_window [all] title_format "%title"
 
 default_border pixel 0
 default_floating_border pixel 0
