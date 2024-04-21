@@ -55,3 +55,5 @@ scroll_right Right l
 # assigning new keys for showing next/previous image
 next_img space 
 prev_img BackSpace
+
+save_image C-s

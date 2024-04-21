@@ -1,7 +1,6 @@
 set window-title-basename "true"
 set selection-clipboard "clipboard"
 set guioptions none
-
 # Dracula color theme for Zathura
 # Swaps Foreground for Background to get a light version if the user prefers
 
@@ -54,3 +53,5 @@ set render-loading-bg           rgba(248,248,242,1)   # Foreground
 # Startup options
 #
 set adjust-open width
+
+set database sqlite
