@@ -55,19 +55,20 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-client.focused #282A36 #282A36 #F8F8F2 #000000 #ffffff
-client.focused_inactive #282A36 #282A36 #F8F8F2 #000000 #ffffff
-client.unfocused #171b25 #171b25 #777777 #000000 #ffffff
+client.focused #777777 #282A36 #F8F8F2 #777777 #777777
+client.focused_inactive #282A36 #282A36 #777777 #1E1F29 #1E1F29
+client.unfocused #282A36 #1E1F29 #777777 #1E1F29 #282A36
 
 title_align center
 
 for_window [all] title_format "%title"
 
-default_border pixel 0
+default_border pixel 1
 default_floating_border pixel 0
+smart_borders on
 
-gaps inner 6px
-#gaps bottom 3px
+#gaps inner 6px
+# gaps outer -6px
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
@@ -202,6 +203,24 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+bar {
+    font pango:Inter Display 13
+		separator_symbol ".."
+    status_command i3status
+		    colors {
+        background #1E1F29
+        statusline #F8F8F2
+        separator #666666
+
+        focused_workspace  #1E1F29 #1E1F29 #ffffff
+        active_workspace   #1E1F29 #1E1F29 #77797c
+        inactive_workspace #1E1F29 #1E1F29 #77797c
+        urgent_workspace   #1E1F29 #1E1F29 #FF5555
+        binding_mode       #2f343a #e60053 #ffffff
+    }
+		padding 2px 4px
+}
+
 bindsym $mod+r mode "resize"
-exec --no-startup-id polybar
+#exec --no-startup-id polybar
 exec --no-startup-id picom -b
