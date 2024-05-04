@@ -67,7 +67,7 @@ default_border pixel 1
 default_floating_border pixel 0
 smart_borders on
 
-#gaps inner 6px
+gaps inner 6px
 # gaps outer -6px
 
 # start a terminal
@@ -218,9 +218,8 @@ bar {
         urgent_workspace   #1E1F29 #1E1F29 #FF5555
         binding_mode       #2f343a #e60053 #ffffff
     }
-		padding 2px 4px
+		padding -2px 4px
 }
 
 bindsym $mod+r mode "resize"
-#exec --no-startup-id polybar
 exec --no-startup-id picom -b
