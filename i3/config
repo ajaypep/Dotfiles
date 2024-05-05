@@ -63,12 +63,13 @@ title_align center
 
 for_window [all] title_format "%title"
 
-default_border pixel 1
+default_border pixel 0
 default_floating_border pixel 0
 smart_borders on
 
 gaps inner 6px
 # gaps outer -6px
+smart_gaps on
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
@@ -205,7 +206,6 @@ mode "resize" {
 
 bar {
     font pango:Inter Display 13
-		separator_symbol ".."
     status_command i3status
 		    colors {
         background #1E1F29
@@ -218,7 +218,8 @@ bar {
         urgent_workspace   #1E1F29 #1E1F29 #FF5555
         binding_mode       #2f343a #e60053 #ffffff
     }
-		padding -2px 4px
+		padding -4px 4px
+		tray_padding 0
 }
 
 bindsym $mod+r mode "resize"
