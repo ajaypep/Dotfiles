@@ -16,6 +16,7 @@ local editor_features = {
 	"autocomplete",
 	"color_scheme",
 	"status_line",
+	"linting",
 }
 
 local function get_plugins()
