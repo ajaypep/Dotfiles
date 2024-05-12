@@ -6,14 +6,14 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 local editor_features = {
-	"comment",
+	"commenting",
 	"gitsigns",
-	"fuzzy_finder",
+	"fuzzy_finding",
 	"lsp",
 	"typst_integration",
 	"syntax_highlighting",
-	"format",
-	"autocomplete",
+	"formatting",
+	"autocompletion",
 	"color_scheme",
 	"status_line",
 	"linting",
