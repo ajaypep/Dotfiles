@@ -9,25 +9,27 @@ local editor_features = {
 	"commenting",
 	"gitsigns",
 	"fuzzy_finding",
-	"lsp",
 	"typst_integration",
 	"syntax_highlighting",
-	"formatting",
 	"autocompletion",
 	"color_scheme",
 	"status_line",
-	"linting",
+	"diagnostics",
+	"package_manager",
 }
 
-local function get_plugins()
+local function get_plugins_with_config()
 	local plugins = {}
 	for _, v in ipairs(editor_features) do
 		table.insert(plugins, require(v))
 	end
+	for _, value in ipairs(require("lang_tools")) do
+		table.insert(plugins, value)
+	end
 	return plugins
 end
 
-require("lazy").setup(get_plugins(), {
+require("lazy").setup(get_plugins_with_config(), {
 	ui = {
 		-- If you have a Nerd Font, set icons to an empty table which will use the
 		-- default lazy.nvim defined Nerd Font icons otherwise define a unicode icons table
